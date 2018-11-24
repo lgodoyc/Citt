@@ -4,6 +4,7 @@
 
 <html>
 <head runat="server">
+
     <title>Login</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -59,7 +60,7 @@
 
 
                     <div class="container-login100-form-btn">
-                        <asp:Button class="login100-form-btn" Text="Login" ID="btnLogin" runat="server" ClientIDMode="Static" OnClick="btnLogin_Click" Data-toggle="modal" />
+                        <asp:Button class="login100-form-btn" Text="Login" ID="btnLogin" runat="server" ClientIDMode="Static" Data-toggle="modal" OnClick="btnLogin_Click"/>
                     </div>
                     <br />
                     <div class="content-footer">

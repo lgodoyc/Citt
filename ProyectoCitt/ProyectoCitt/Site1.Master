@@ -54,14 +54,14 @@
                 <div class="panel panel-warning">
                     <div class="panel-heading" role="tab" id="headingTwo">
                         <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="collapsed">Consultas <span class="glyphicon glyphicon-plus pull-right" aria-hidden="true"></span>
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="collapsed">HTML <span class="glyphicon glyphicon-plus pull-right" aria-hidden="true"></span>
                             </a>
                         </h4>
                     </div>
                     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
                         <div class="panel-body">
                             <div class="list-group">
-                                <a href="../Administrador/consultarPermisoAdministrador.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>Consultar Permisos </a>
+                                <a href="Views/HTML/InicioHtml.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Inicio </a>
                             </div>
                         </div>
                     </div>
@@ -69,14 +69,14 @@
                 <div class="panel panel-warning">
                     <div class="panel-heading" role="tab" id="headingThree">
                         <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Descarga <span class="glyphicon glyphicon-plus pull-right" aria-hidden="true"></span>
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">CSS <span class="glyphicon glyphicon-plus pull-right" aria-hidden="true"></span>
                             </a>
                         </h4>
                     </div>
                     <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
                         <div class="panel-body">
                             <div class="list-group">
-                                <a href="../Administrador/DescargaXMLAdmin.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>Archivo XML </a>
+                                <a href="Views/CSS/InicioCSS.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Inicio </a>
                             </div>
                         </div>
                     </div>
@@ -84,14 +84,14 @@
                 <div class="panel panel-warning">
                     <div class="panel-heading" role="tab" id="headingFour">
                         <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">Validar Documento <span class="glyphicon glyphicon-plus pull-right" aria-hidden="true"></span>
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour"> JQuery <span class="glyphicon glyphicon-plus pull-right" aria-hidden="true"></span>
                             </a>
                         </h4>
                     </div>
                     <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour" aria-expanded="true">
                         <div class="panel-body">
                             <div class="list-group">
-                                <a href="../Administrador/BuscarDocumentoAdmin.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>Buscar documento </a>
+                                <a href="Views/JQuery/InicioJquery.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Inicio </a>
                             </div>
                         </div>
                     </div>

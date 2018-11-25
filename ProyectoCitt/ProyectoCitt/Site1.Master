@@ -6,7 +6,7 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
-    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="Content/style.css" />
     <link rel="stylesheet" type="text/css" href="Content/main.css" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -19,6 +19,7 @@
                 margin-right: 0px;
                 margin-left: 0px;
             }
+
         </style>
     </asp:ContentPlaceHolder>
 </head>
@@ -44,9 +45,10 @@
                         <div class="panel-body">
                             <div class="list-group">
 
-                                <a href="Views/Administrador/InicioAdmin.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+                                <a href="../Administrador/InicioAdmin.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>
                                     <asp:Label runat="server" ID="lblAdmin"></asp:Label>
                                 </a>
+                                <a href="../Alumno/Notas.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Notas </a>
                             </div>
                         </div>
                     </div>
@@ -61,7 +63,9 @@
                     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
                         <div class="panel-body">
                             <div class="list-group">
-                                <a href="Views/HTML/InicioHtml.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Inicio </a>
+                                <a href="../HTML/InicioHtml.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Inicio </a>
+                                <a href="../HTML/Curso.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Cursos </a>
+
                             </div>
                         </div>
                     </div>
@@ -76,7 +80,8 @@
                     <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
                         <div class="panel-body">
                             <div class="list-group">
-                                <a href="Views/CSS/InicioCSS.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Inicio </a>
+                                <a href="../CSS/InicioCSS.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Inicio </a>
+                                <a href="../CSS/Curso.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Cursos </a>
                             </div>
                         </div>
                     </div>
@@ -91,7 +96,8 @@
                     <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour" aria-expanded="true">
                         <div class="panel-body">
                             <div class="list-group">
-                                <a href="Views/JQuery/InicioJquery.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Inicio </a>
+                                <a href="../JQuery/InicioJquery.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Inicio </a>
+                                <a href="../JQuery/Curso.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Curso </a>
                             </div>
                         </div>
                     </div>

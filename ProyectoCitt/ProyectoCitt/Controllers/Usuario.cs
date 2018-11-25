@@ -122,5 +122,21 @@ namespace ProyectoCitt.Controllers
             }
             return true;
         }
+        public bool comprobarCuenta(string user, string pass) {
+            try
+            {
+                USUARIO usuario = Conexion.entities.USUARIO.First(f => f.NOMBREUSUARIO == user);
+                if (usuario.NOMBREUSUARIO.Equals(user) && usuario.CONTRASEÑA.Equals(pass))
+                {
+                    return true;
+                }
+                else return false;
+            }
+            catch (Exception e)
+            {
+
+                return false;
+            }
+        }
     }
 }

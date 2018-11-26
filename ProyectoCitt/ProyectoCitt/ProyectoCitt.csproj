@@ -250,7 +250,9 @@
     <Content Include="Views\Alumno\Notas.aspx" />
     <Content Include="Views\CSS\Curso.aspx" />
     <Content Include="Views\CSS\InicioCSS.aspx" />
-    <Content Include="Views\HTML\Curso.aspx" />
+    <Content Include="Views\HTML\Curso.aspx">
+      <BrowseToURL>../Views/HTML/Curso</BrowseToURL>
+    </Content>
     <Content Include="Views\HTML\InicioHtml.aspx" />
     <Content Include="Views\JQuery\Curso.aspx" />
     <Content Include="Views\JQuery\InicioJquery.aspx" />

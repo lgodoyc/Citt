@@ -13,5 +13,10 @@ namespace ProyectoCitt.Views.HTML
         {
 
         }
+
+        protected void btnEvaluacion_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

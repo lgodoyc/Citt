@@ -23,7 +23,7 @@
         </style>
     </asp:ContentPlaceHolder>
 </head>
-<body>
+<body id="ContenedorImagen">
     <br>
     <br>
     <br>
@@ -104,7 +104,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-10">
+        <div class="col-sm-10">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>

@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Curso.aspx.cs" Inherits="ProyectoCitt.Views.HTML.Curso" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Nivel2.aspx.cs" Inherits="ProyectoCitt.Views.HTML.Nivel2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <script>
+     <script>
         function openModal() {
             $('#mostrarmodal').modal('show');
         }
@@ -31,11 +31,11 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <!-- Contenedor principal -->
+     <!-- Contenedor principal -->
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-5">
-                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/cqMfPS8jPys?start=13;rel=0;end=882;modestbranding=0;controls=1;fs=1;ecver=2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TNQleomUw6U?start=19;rel=0;end=519;modestbranding=0;controls=0;fs=1;ecver=2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="col-sm-5">
                 <div>

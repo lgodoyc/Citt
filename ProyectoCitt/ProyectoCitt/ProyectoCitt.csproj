@@ -254,6 +254,9 @@
       <BrowseToURL>../Views/HTML/Curso</BrowseToURL>
     </Content>
     <Content Include="Views\HTML\InicioHtml.aspx" />
+    <Content Include="Views\HTML\Nivel1.aspx" />
+    <Content Include="Views\HTML\Nivel2.aspx" />
+    <Content Include="Views\HTML\Nivel3.aspx" />
     <Content Include="Views\JQuery\Curso.aspx" />
     <Content Include="Views\JQuery\InicioJquery.aspx" />
     <Content Include="Views\Login\CambioContraseña.aspx" />
@@ -378,6 +381,27 @@
     </Compile>
     <Compile Include="Views\HTML\InicioHtml.aspx.designer.cs">
       <DependentUpon>InicioHtml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HTML\Nivel1.aspx.cs">
+      <DependentUpon>Nivel1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\HTML\Nivel1.aspx.designer.cs">
+      <DependentUpon>Nivel1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HTML\Nivel2.aspx.cs">
+      <DependentUpon>Nivel2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\HTML\Nivel2.aspx.designer.cs">
+      <DependentUpon>Nivel2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HTML\Nivel3.aspx.cs">
+      <DependentUpon>Nivel3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\HTML\Nivel3.aspx.designer.cs">
+      <DependentUpon>Nivel3.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\JQuery\Curso.aspx.cs">
       <DependentUpon>Curso.aspx</DependentUpon>

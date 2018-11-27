@@ -63,8 +63,9 @@
                     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
                         <div class="panel-body">
                             <div class="list-group">
-                                <a href="../HTML/InicioHtml.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Inicio </a>
-                                <a href="../HTML/Curso.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Cursos </a>
+                                <a href="../HTML/Nivel1.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Nivel 1</a>
+                                <a href="../HTML/Nivel2.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Nivel 2</a>
+                                <a href="../HTML/Nivel3.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Nivel 3</a>
 
                             </div>
                         </div>

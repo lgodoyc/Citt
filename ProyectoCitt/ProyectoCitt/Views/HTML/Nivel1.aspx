@@ -1,6 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Curso.aspx.cs" Inherits="ProyectoCitt.Views.HTML.Curso" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Nivel1.aspx.cs" Inherits="ProyectoCitt.Views.HTML.Nivel1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <script>
+     <script>
         function openModal() {
             $('#mostrarmodal').modal('show');
         }
@@ -31,7 +31,7 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <!-- Contenedor principal -->
+     <!-- Contenedor principal -->
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-5">

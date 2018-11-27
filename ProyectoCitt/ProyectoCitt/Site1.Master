@@ -19,7 +19,6 @@
                 margin-right: 0px;
                 margin-left: 0px;
             }
-
         </style>
     </asp:ContentPlaceHolder>
 </head>
@@ -81,8 +80,9 @@
                     <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
                         <div class="panel-body">
                             <div class="list-group">
-                                <a href="../CSS/InicioCSS.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Inicio </a>
-                                <a href="../CSS/Curso.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Cursos </a>
+                                <a href="../CSS/Nivel1.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Nivel 1</a>
+                                <a href="../CSS/Nivel2.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Nivel 2</a>
+                                <a href="../CSS/Nivel3.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Nivel 3</a>
                             </div>
                         </div>
                     </div>
@@ -97,8 +97,9 @@
                     <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour" aria-expanded="true">
                         <div class="panel-body">
                             <div class="list-group">
-                                <a href="../JQuery/InicioJquery.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Inicio </a>
-                                <a href="../JQuery/Curso.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Curso </a>
+                                <a href="../JQUERY/Nivel1.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Nivel 1</a>
+                                <a href="../JQUERY/Nivel2.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Nivel 2</a>
+                                <a href="../JQUERY/Nivel3.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Nivel 3</a>
                             </div>
                         </div>
                     </div>

@@ -250,6 +250,15 @@
     <Content Include="Views\Alumno\Notas.aspx" />
     <Content Include="Views\CSS\Curso.aspx" />
     <Content Include="Views\CSS\InicioCSS.aspx" />
+    <Content Include="Views\CSS\Nivel1.aspx">
+      <BrowseToURL>../Views/CSS/Nivel1</BrowseToURL>
+    </Content>
+    <Content Include="Views\CSS\Nivel2.aspx">
+      <BrowseToURL>../Views/CSS/Nivel2</BrowseToURL>
+    </Content>
+    <Content Include="Views\CSS\Nivel3.aspx">
+      <BrowseToURL>../Views/CSS/Nivel3</BrowseToURL>
+    </Content>
     <Content Include="Views\HTML\Curso.aspx">
       <BrowseToURL>../Views/HTML/Curso</BrowseToURL>
     </Content>
@@ -259,6 +268,15 @@
     <Content Include="Views\HTML\Nivel3.aspx" />
     <Content Include="Views\JQuery\Curso.aspx" />
     <Content Include="Views\JQuery\InicioJquery.aspx" />
+    <Content Include="Views\JQuery\Nivel1.aspx">
+      <BrowseToURL>../Views/JQuery/Nivel1</BrowseToURL>
+    </Content>
+    <Content Include="Views\JQuery\Nivel2.aspx">
+      <BrowseToURL>../Views/JQuery/Nivel2</BrowseToURL>
+    </Content>
+    <Content Include="Views\JQuery\Nivel3.aspx">
+      <BrowseToURL>../Views/JQuery/Nivel3</BrowseToURL>
+    </Content>
     <Content Include="Views\Login\CambioContraseña.aspx" />
     <Content Include="Views\Login\Registro.aspx" />
     <Content Include="Web.config" />
@@ -368,6 +386,27 @@
     <Compile Include="Views\CSS\InicioCSS.aspx.designer.cs">
       <DependentUpon>InicioCSS.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\CSS\Nivel1.aspx.cs">
+      <DependentUpon>Nivel1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\CSS\Nivel1.aspx.designer.cs">
+      <DependentUpon>Nivel1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CSS\Nivel2.aspx.cs">
+      <DependentUpon>Nivel2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\CSS\Nivel2.aspx.designer.cs">
+      <DependentUpon>Nivel2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CSS\Nivel3.aspx.cs">
+      <DependentUpon>Nivel3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\CSS\Nivel3.aspx.designer.cs">
+      <DependentUpon>Nivel3.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\HTML\Curso.aspx.cs">
       <DependentUpon>Curso.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -416,6 +455,27 @@
     </Compile>
     <Compile Include="Views\JQuery\InicioJquery.aspx.designer.cs">
       <DependentUpon>InicioJquery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\JQuery\Nivel1.aspx.cs">
+      <DependentUpon>Nivel1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\JQuery\Nivel1.aspx.designer.cs">
+      <DependentUpon>Nivel1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\JQuery\Nivel2.aspx.cs">
+      <DependentUpon>Nivel2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\JQuery\Nivel2.aspx.designer.cs">
+      <DependentUpon>Nivel2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\JQuery\Nivel3.aspx.cs">
+      <DependentUpon>Nivel3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\JQuery\Nivel3.aspx.designer.cs">
+      <DependentUpon>Nivel3.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Login\CambioContraseña.aspx.cs">
       <DependentUpon>CambioContraseña.aspx</DependentUpon>

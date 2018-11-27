@@ -6,26 +6,26 @@
         }
 
         function openInfo1() {
-            $('[id*=Title]').text("Introduccion al html");
-            $('[id*=lblInfo]').text("HTML (HyperText Markup Language) es el primer lenguaje que una persona debe conocer si desea comenzar a realizar páginas web. HTML no es un lenguaje de programación, sino una lenguaje descriptivo, una serie de etiquetas que el navegador interpretará de una u otra forma para mostrar distintos contenidos por pantalla.");
+            $('[id*=Title]').text("¿Que es un enlace?");
+            $('[id*=lblInfo]').text("En el HTML los enlaces se marcan con la etiqueta <a></a> y el atributo principal es href= donde se escribe la ubicación del archivo de destino que puede estar en la misma carpeta que el archivo que lo está llamando, en otra carpeta del mismo sitio o en otro sitio web.");
             $('#modalInfo').modal('show');
         }
 
         function openInfo2() {
-            $('[id*=Title]').text("¿Que es una etiqueta en HTML?");
-            $('[id*=lblInfo]').text("Es un fragmento que representa algo dentro de una pagina. Ej. un boton");
+            $('[id*=Title]').text("Atributo target");
+            $('[id*=lblInfo]').text("Cuando abrimos una página web en un navegador (haciendo clic en un enlace) puede especificar dónde y cómo abrir esta ventana. Si no se especifica al navegador una cierta ventana, entonces la página se abrirá en la misma ventana. Podemos decir al navegador que utilice cierta ventana con la ayuda del atributo target de la etiqueta <a>. El valor del atributo target le dice al navegador en donde tiene que abrir esta pagina web. Por ejemplo el valor _blank dice al navegado que tiene que abrir la pagina en una nueva ventana.");
             $('#modalInfo').modal('show');
         }
 
         function openInfo3() {
-            $('[id*=Title]').text("¿Que es un atributo en HTML");
-            $('[id*=lblInfo]').text("Los atributos de las etiquetas HTML sirven para definir detalles de comportamiento o presentación de la etiqueta a los que se les coloca. Se escriben dentro de la propia etiqueta con su nombre de atributo y el valor del atributo entre comillas.");
+            $('[id*=Title]').text("¿Etiqueta <link>");
+            $('[id*=lblInfo]').text("El elemento HTML <link> especifica la relación entre el documento actual y un recurso externo. Los usos posibles de este elemento incluyen la definición de un marco relacional para navegación. Este elemento es más frecuentemente usado para enlazar hojas de estilos.");
             $('#modalInfo').modal('show');
         }
 
          function openInfo4() {
-            $('[id*=Title]').text("Estructura basica de un HTML");
-            $('[id*=lblInfo]').text("<html><head></head><body></body></html>");
+            $('[id*=Title]').text("Abrir Correo");
+            $('[id*=lblInfo]').text("Naturalmente, éste debe ser un URL válido. ... Es decir, un enlace HTML cuyo atributo HREF sea un URL del esquema mailto no puede contener más información que la dirección de correo electrónico vinculada: ni asunto, ni cuerpo, ni nada. Sólo la dirección de correo");
             $('#modalInfo').modal('show');
         }
     </script>
@@ -44,10 +44,10 @@
                 </div>
                 <div class="col-sm-5">
                     <div class="list-group" id="list-tab" role="tablist">
-                        <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home" onclick="javascript:openInfo1()">Introduccion al html</a>
-                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile" onclick="javascript:openInfo2()">¿Que es una etiqueta?</a>
-                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages"  onclick="javascript:openInfo3()">¿Que es un atributo?</a>
-                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"  onclick="javascript:openInfo4()">Estructura de un html</a>
+                        <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home" onclick="javascript:openInfo1()">¿Que es un enlace?</a>
+                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile" onclick="javascript:openInfo2()">¿Que es el atributo target?</a>
+                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages"  onclick="javascript:openInfo3()">¿Etiqueta Link?</a>
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"  onclick="javascript:openInfo4()">Abrir correo</a>
                     </div>
                 </div>
             </div>
@@ -75,35 +75,35 @@
                     <div class="table-responsive printable">
                         <asp:Table runat="server" CssClass="table table-bordred table-striped" ID="tablaConsultaPermisos">
                             <asp:TableRow TableSection="TableHeader">
-                                <asp:TableHeaderCell>N°1: ¿Que es un HTML?</asp:TableHeaderCell>
+                                <asp:TableHeaderCell>N°1: ¿que atributo se utilizar para especificar la ruta del encale?</asp:TableHeaderCell>
                                 <asp:TableCell>
                                     <select>
                                         <option>Seleccione Opcion</option>
-                                        <option>Es un lenguaje de JAVA</option>
-                                        <option>Un lenguaje de programacion</option>
-                                        <option>Lenguaje de Hipertexto</option>
+                                        <option>spam=</option>
+                                        <option>hreft=</option>
+                                        <option>href=</option>
                                     </select>
                                 </asp:TableCell>
                             </asp:TableRow>
                             <asp:TableRow TableSection="TableHeader">
-                                <asp:TableHeaderCell>N°2: ¿Que tag se utiliza para poner un comentario?</asp:TableHeaderCell>
+                                <asp:TableHeaderCell>N°2: ¿Como se abre el cliente de correo?</asp:TableHeaderCell>
                                 <asp:TableCell>
                                     <select>
                                         <option>Seleccione Opcion</option>
-                                        <option>< head ></option>
-                                        <option>< ! --  -- ></option>
-                                        <option>Se escrube sin anteponer el "<"</option>
+                                        <option>hreft=mailto</option>
+                                        <option>href=mailto</option>
+                                        <option>opemn=mail</option>
                                     </select>
                                 </asp:TableCell>
                             </asp:TableRow>
                             <asp:TableRow TableSection="TableHeader">
-                                <asp:TableHeaderCell>N°3: ¿Que funcion cumple un atributo dentro de una etiqueta?</asp:TableHeaderCell>
+                                <asp:TableHeaderCell>N°3: ¿Que etiqueta se utiliza para invocar un css?</asp:TableHeaderCell>
                                 <asp:TableCell>
                                     <select>
                                         <option>Seleccione Opcion</option>
-                                        <option>Es una descripcion</option>
-                                        <option>Es una accion de una etiqueta</option>
-                                        <option>Define acciones o estilo</option>
+                                        <option>< a ></option>
+                                        <option>< p ></option>
+                                        <option>< link ></option>
                                     </select>
                                 </asp:TableCell>
                             </asp:TableRow>

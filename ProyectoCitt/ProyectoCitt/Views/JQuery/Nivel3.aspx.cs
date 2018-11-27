@@ -13,5 +13,10 @@ namespace ProyectoCitt.Views.JQuery
         {
 
         }
+
+        protected void btnEvaluacion_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

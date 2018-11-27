@@ -34,8 +34,10 @@
      <!-- Contenedor principal -->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-5">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/TNQleomUw6U?start=19;rel=0;end=519;modestbranding=0;controls=0;fs=1;ecver=2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="col-sm-7">
+                <video autoplay class="embed-responsive-item"  width="900px" height="500px">
+                    <source src="../../Scripts/Multimedia/HTML_2.mp4" type="video/mp4">
+                </video>
             </div>
             <div class="col-sm-5">
                 <div>

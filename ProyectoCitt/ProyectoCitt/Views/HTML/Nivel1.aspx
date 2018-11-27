@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Nivel1.aspx.cs" Inherits="ProyectoCitt.Views.HTML.Nivel1" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-     <script>
+    <script>
         function openModal() {
             $('#mostrarmodal').modal('show');
         }
@@ -23,7 +24,7 @@
             $('#modalInfo').modal('show');
         }
 
-         function openInfo4() {
+        function openInfo4() {
             $('[id*=Title]').text("Estructura basica de un HTML");
             $('[id*=lblInfo]').text("<html><head></head><body></body></html>");
             $('#modalInfo').modal('show');
@@ -31,11 +32,13 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <!-- Contenedor principal -->
+    <!-- Contenedor principal -->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-5">
-                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/cqMfPS8jPys?start=13;rel=0;end=882;modestbranding=0;controls=1;fs=1;ecver=2" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="col-sm-7">
+                <video autoplay class="embed-responsive-item"  width="900px" height="500px">
+                    <source src="../../Scripts/Multimedia/HTML_1.mp4" type="video/mp4">
+                </video>
             </div>
             <div class="col-sm-5">
                 <div>
@@ -46,22 +49,23 @@
                     <div class="list-group" id="list-tab" role="tablist">
                         <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home" onclick="javascript:openInfo1()">Introduccion al html</a>
                         <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile" onclick="javascript:openInfo2()">¿Que es una etiqueta?</a>
-                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages"  onclick="javascript:openInfo3()">¿Que es un atributo?</a>
-                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"  onclick="javascript:openInfo4()">Estructura de un html</a>
+                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages" onclick="javascript:openInfo3()">¿Que es un atributo?</a>
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings" onclick="javascript:openInfo4()">Estructura de un html</a>
                     </div>
                 </div>
             </div>
         </div>
-        <hr />
+    </div>
+    <hr />
+    <div>
         <div>
-            <div>
-                <div class="col-md-offset-2">
-                    <div class="col-md-7">
-                        <button id="btnComenzar" class="btn btn-success" onclick="javascriot:openModal()">Comenzar Encuesta</button>
-                    </div>
+            <div class="col-md-offset-2">
+                <div class="col-md-7">
+                    <button id="btnComenzar" class="btn btn-success" onclick="javascriot:openModal()">Comenzar Encuesta</button>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- Modal de encuesta -->

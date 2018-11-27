@@ -6,28 +6,28 @@
         }
 
         function openInfo1() {
-            $('[id*=Title]').text("Introduccion al html");
-            $('[id*=lblInfo]').text("HTML (HyperText Markup Language) es el primer lenguaje que una persona debe conocer si desea comenzar a realizar páginas web. HTML no es un lenguaje de programación, sino una lenguaje descriptivo, una serie de etiquetas que el navegador interpretará de una u otra forma para mostrar distintos contenidos por pantalla.");
+            $('[id*=Title]').text("Encabezados <h1></h1>");
+            $('[id*=lblInfo]').text("Puede que queramos empezar nuestra web o nuestro texto con un encabezado indicando el título del artículo, categoría, etc. Pues bien, para escribir encabezados tenemos que utilizar las etiquetas <h>. Esta etiqueta viene acompañada de un número, desde el 1 hasta el 6, predefiniendo éstos el tamaño del encabezado. Así, <h1> sería el encabezado más grande mientras que <h6> sería el más pequeño.");
             $('#modalInfo').modal('show');
         }
 
         function openInfo2() {
-            $('[id*=Title]').text("¿Que es una etiqueta en HTML?");
-            $('[id*=lblInfo]').text("Es un fragmento que representa algo dentro de una pagina. Ej. un boton");
+            $('[id*=Title]').text("Parrafo <p></p>");
+            $('[id*=lblInfo]').text("La finalidad de la etiqueta <p>, es la de definir un párrafo, el texto encerrado entre las mismas será considerado por el navegador como un párrafo. El navegador realiza un ajuste automático de los párrafos al ancho de pantalla determinado por la ventana del programa navegador. Se ha de tener en cuenta que los navegadores cuando realizan la representación del lenguaje HTML5, no tienen en cuenta más de un espacio en blanco de separación entre palabras, es decir aunque deje con su editor de textos entre una palabra y otra más de un espacio en blanco, solo se visualizara uno descartándose el resto.");
             $('#modalInfo').modal('show');
         }
 
         function openInfo3() {
-            $('[id*=Title]').text("¿Que es un atributo en HTML");
-            $('[id*=lblInfo]').text("Los atributos de las etiquetas HTML sirven para definir detalles de comportamiento o presentación de la etiqueta a los que se les coloca. Se escriben dentro de la propia etiqueta con su nombre de atributo y el valor del atributo entre comillas.");
+            $('[id*=Title]').text("Etiqueta span");
+            $('[id*=lblInfo]').text("Es un contenedor en línea. Sirve para aplicar estilo al texto o agrupar elementos en línea. Sus etiquetas son: <span> y </span> (ambas obligatorias). Está definido como: Elemento especial, y por lo tanto en línea.");
             $('#modalInfo').modal('show');
         }
 
-         function openInfo4() {
-            $('[id*=Title]').text("Estructura basica de un HTML");
-            $('[id*=lblInfo]').text("<html><head></head><body></body></html>");
-            $('#modalInfo').modal('show');
-        }
+        // function openInfo4() {
+        //    $('[id*=Title]').text("Estructura basica de un HTML");
+        //    $('[id*=lblInfo]').text("<html> <head> </head> <body> </body> </html>");
+        //    $('#modalInfo').modal('show');
+        //}
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -44,10 +44,10 @@
                 </div>
                 <div class="col-sm-5">
                     <div class="list-group" id="list-tab" role="tablist">
-                        <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home" onclick="javascript:openInfo1()">Introduccion al html</a>
-                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile" onclick="javascript:openInfo2()">¿Que es una etiqueta?</a>
-                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages"  onclick="javascript:openInfo3()">¿Que es un atributo?</a>
-                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"  onclick="javascript:openInfo4()">Estructura de un html</a>
+                        <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home" onclick="javascript:openInfo1()">Encabezados</a>
+                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile" onclick="javascript:openInfo2()">Parrafo</a>
+                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages"  onclick="javascript:openInfo3()">etiqueta span</a>
+                        <%--<a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"  onclick="javascript:openInfo4()">Estructura de un html</a>--%>
                     </div>
                 </div>
             </div>
@@ -75,35 +75,35 @@
                     <div class="table-responsive printable">
                         <asp:Table runat="server" CssClass="table table-bordred table-striped" ID="tablaConsultaPermisos">
                             <asp:TableRow TableSection="TableHeader">
-                                <asp:TableHeaderCell>N°1: ¿Que es un HTML?</asp:TableHeaderCell>
+                                <asp:TableHeaderCell>N°1: ¿Para que se utiliza la etiqueta < strong >?</asp:TableHeaderCell>
                                 <asp:TableCell>
                                     <select>
                                         <option>Seleccione Opcion</option>
-                                        <option>Es un lenguaje de JAVA</option>
-                                        <option>Un lenguaje de programacion</option>
-                                        <option>Lenguaje de Hipertexto</option>
+                                        <option>un salto de linea</option>
+                                        <option>enegrecer el texto</option>
+                                        <option>para citar un autor</option>
                                     </select>
                                 </asp:TableCell>
                             </asp:TableRow>
                             <asp:TableRow TableSection="TableHeader">
-                                <asp:TableHeaderCell>N°2: ¿Que tag se utiliza para poner un comentario?</asp:TableHeaderCell>
+                                <asp:TableHeaderCell>N°2: ¿que etiqueta se utiliza para un titulo?</asp:TableHeaderCell>
                                 <asp:TableCell>
                                     <select>
                                         <option>Seleccione Opcion</option>
-                                        <option>< head ></option>
-                                        <option>< ! --  -- ></option>
-                                        <option>Se escrube sin anteponer el "<"</option>
+                                        <option>< span ></option>
+                                        <option>< p ></option>
+                                        <option>< h 1></option>
                                     </select>
                                 </asp:TableCell>
                             </asp:TableRow>
                             <asp:TableRow TableSection="TableHeader">
-                                <asp:TableHeaderCell>N°3: ¿Que funcion cumple un atributo dentro de una etiqueta?</asp:TableHeaderCell>
+                                <asp:TableHeaderCell>N°3: ¿que etiqueta se utiliza para crear un parrafo?</asp:TableHeaderCell>
                                 <asp:TableCell>
                                     <select>
                                         <option>Seleccione Opcion</option>
-                                        <option>Es una descripcion</option>
-                                        <option>Es una accion de una etiqueta</option>
-                                        <option>Define acciones o estilo</option>
+                                        <option>< p ></option>
+                                        <option>< b ></option>
+                                        <option>< span ></option>
                                     </select>
                                 </asp:TableCell>
                             </asp:TableRow>

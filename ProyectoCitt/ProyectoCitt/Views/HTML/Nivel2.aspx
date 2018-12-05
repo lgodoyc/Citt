@@ -74,44 +74,44 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label=""><span>×</span></button>
                 </div>
                 <div class="modal-body">
+                    <form runat="server">
                     <div class="table-responsive printable">
                         <asp:Table runat="server" CssClass="table table-bordred table-striped" ID="tablaConsultaPermisos">
                             <asp:TableRow TableSection="TableHeader">
                                 <asp:TableHeaderCell>N°1: ¿Para que se utiliza la etiqueta < strong >?</asp:TableHeaderCell>
                                 <asp:TableCell>
-                                    <select>
-                                        <option>Seleccione Opcion</option>
-                                        <option>un salto de linea</option>
-                                        <option>enegrecer el texto</option>
-                                        <option>para citar un autor</option>
-                                    </select>
+                                    <asp:DropDownList runat="server" ID="preguntaUno">
+                                        <asp:ListItem>Seleccione Opcion</asp:ListItem>
+                                        <asp:ListItem>Un salto de linea</asp:ListItem>
+                                        <asp:ListItem>Resaltar el texto</asp:ListItem>
+                                        <asp:ListItem>Citar a un autor</asp:ListItem>
+                                    </asp:DropDownList>                                    
                                 </asp:TableCell>
                             </asp:TableRow>
                             <asp:TableRow TableSection="TableHeader">
                                 <asp:TableHeaderCell>N°2: ¿que etiqueta se utiliza para un titulo?</asp:TableHeaderCell>
                                 <asp:TableCell>
-                                    <select>
-                                        <option>Seleccione Opcion</option>
-                                        <option>< span ></option>
-                                        <option>< p ></option>
-                                        <option>< h 1></option>
-                                    </select>
+                                    <asp:DropDownList runat="server" ID="preguntaDos">
+                                        <asp:ListItem>Seleccione Opcion</asp:ListItem>
+                                        <asp:ListItem>< span ></asp:ListItem>
+                                        <asp:ListItem>< p ></asp:ListItem>
+                                        <asp:ListItem>< h1 ></asp:ListItem>
+                                    </asp:DropDownList>                                    
                                 </asp:TableCell>
                             </asp:TableRow>
                             <asp:TableRow TableSection="TableHeader">
                                 <asp:TableHeaderCell>N°3: ¿que etiqueta se utiliza para crear un parrafo?</asp:TableHeaderCell>
                                 <asp:TableCell>
-                                    <select>
-                                        <option>Seleccione Opcion</option>
-                                        <option>< p ></option>
-                                        <option>< b ></option>
-                                        <option>< span ></option>
-                                    </select>
+                                    <asp:DropDownList runat="server" ID="preguntaTres">
+                                        <asp:ListItem>Seleccione Opcion</asp:ListItem>
+                                        <asp:ListItem>< p ></asp:ListItem>
+                                        <asp:ListItem>< b ></asp:ListItem>
+                                        <asp:ListItem>< span ></asp:ListItem>
+                                    </asp:DropDownList>                                    
                                 </asp:TableCell>
                             </asp:TableRow>
                         </asp:Table>
-                    </div>
-                    <form runat="server">
+                    </div>                    
                         <asp:Button Style="margin-left: 170px" runat="server" CssClass="btn btn-success" ID="btnEvaluacion" OnClick="btnEvaluacion_Click" Text="Evaluar" />
                     </form>
                 </div>

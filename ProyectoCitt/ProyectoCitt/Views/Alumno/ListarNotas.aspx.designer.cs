@@ -11,7 +11,7 @@ namespace ProyectoCitt.Views.Alumno
 {
 
 
-    public partial class Notas
+    public partial class ListarNotas
     {
     }
 }

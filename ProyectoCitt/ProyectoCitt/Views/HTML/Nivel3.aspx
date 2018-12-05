@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Nivel3.aspx.cs" Inherits="ProyectoCitt.Views.HTML.Nivel3" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-     <script>
+    <script>
         function openModal() {
             $('#mostrarmodal').modal('show');
         }
@@ -23,7 +24,7 @@
             $('#modalInfo').modal('show');
         }
 
-         function openInfo4() {
+        function openInfo4() {
             $('[id*=Title]').text("Abrir Correo");
             $('[id*=lblInfo]').text("Naturalmente, éste debe ser un URL válido. ... Es decir, un enlace HTML cuyo atributo HREF sea un URL del esquema mailto no puede contener más información que la dirección de correo electrónico vinculada: ni asunto, ni cuerpo, ni nada. Sólo la dirección de correo");
             $('#modalInfo').modal('show');
@@ -31,11 +32,11 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <!-- Contenedor principal -->
+    <!-- Contenedor principal -->
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-7">
-                <video autoplay class="embed-responsive-item"  width="900px" height="500px">
+                <video autoplay class="embed-responsive-item" width="900px" height="500px">
                     <source src="../../Scripts/Multimedia/HTML_3.mp4" type="video/mp4">
                 </video>
             </div>
@@ -48,8 +49,8 @@
                     <div class="list-group" id="list-tab" role="tablist">
                         <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home" onclick="javascript:openInfo1()">¿Que es un enlace?</a>
                         <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile" onclick="javascript:openInfo2()">¿Que es el atributo target?</a>
-                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages"  onclick="javascript:openInfo3()">¿Etiqueta Link?</a>
-                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"  onclick="javascript:openInfo4()">Abrir correo</a>
+                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages" onclick="javascript:openInfo3()">¿Etiqueta Link?</a>
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings" onclick="javascript:openInfo4()">Abrir correo</a>
                     </div>
                 </div>
             </div>
@@ -74,44 +75,44 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label=""><span>×</span></button>
                 </div>
                 <div class="modal-body">
-                    <div class="table-responsive printable">
-                        <asp:Table runat="server" CssClass="table table-bordred table-striped" ID="tablaConsultaPermisos">
-                            <asp:TableRow TableSection="TableHeader">
-                                <asp:TableHeaderCell>N°1: ¿que atributo se utilizar para especificar la ruta del encale?</asp:TableHeaderCell>
-                                <asp:TableCell>
-                                    <select>
-                                        <option>Seleccione Opcion</option>
-                                        <option>spam=</option>
-                                        <option>hreft=</option>
-                                        <option>href=</option>
-                                    </select>
-                                </asp:TableCell>
-                            </asp:TableRow>
-                            <asp:TableRow TableSection="TableHeader">
-                                <asp:TableHeaderCell>N°2: ¿Como se abre el cliente de correo?</asp:TableHeaderCell>
-                                <asp:TableCell>
-                                    <select>
-                                        <option>Seleccione Opcion</option>
-                                        <option>hreft=mailto</option>
-                                        <option>href=mailto</option>
-                                        <option>opemn=mail</option>
-                                    </select>
-                                </asp:TableCell>
-                            </asp:TableRow>
-                            <asp:TableRow TableSection="TableHeader">
-                                <asp:TableHeaderCell>N°3: ¿Que etiqueta se utiliza para invocar un css?</asp:TableHeaderCell>
-                                <asp:TableCell>
-                                    <select>
-                                        <option>Seleccione Opcion</option>
-                                        <option>< a ></option>
-                                        <option>< p ></option>
-                                        <option>< link ></option>
-                                    </select>
-                                </asp:TableCell>
-                            </asp:TableRow>
-                        </asp:Table>
-                    </div>
                     <form runat="server">
+                        <div class="table-responsive printable">
+                            <asp:Table runat="server" CssClass="table table-bordred table-striped" ID="tablaConsultaPermisos">
+                                <asp:TableRow TableSection="TableHeader">
+                                    <asp:TableHeaderCell>N°1: ¿que atributo se utilizar para especificar la ruta del enlace?</asp:TableHeaderCell>
+                                    <asp:TableCell>
+                                        <asp:DropDownList runat="server" ID="preguntaUno">
+                                            <asp:ListItem>Seleccione Opcion</asp:ListItem>
+                                            <asp:ListItem> span </asp:ListItem>
+                                            <asp:ListItem> hreft </asp:ListItem>
+                                            <asp:ListItem> href </asp:ListItem>
+                                        </asp:DropDownList>
+                                    </asp:TableCell>
+                                </asp:TableRow>
+                                <asp:TableRow TableSection="TableHeader">
+                                    <asp:TableHeaderCell>N°2: ¿Como se abre el cliente de correo?</asp:TableHeaderCell>
+                                    <asp:TableCell>
+                                        <asp:DropDownList runat="server" ID="preguntaDos">
+                                            <asp:ListItem>Seleccione Opcion</asp:ListItem>
+                                            <asp:ListItem>hreft = mailto</asp:ListItem>
+                                            <asp:ListItem>href = mailto</asp:ListItem>
+                                            <asp:ListItem>open = mail</asp:ListItem>
+                                        </asp:DropDownList>
+                                    </asp:TableCell>
+                                </asp:TableRow>
+                                <asp:TableRow TableSection="TableHeader">
+                                    <asp:TableHeaderCell>N°3: ¿Que etiqueta se utiliza para invocar un css?</asp:TableHeaderCell>
+                                    <asp:TableCell>
+                                        <asp:DropDownList runat="server" ID="preguntaTres">
+                                            <asp:ListItem>Seleccione Opcion</asp:ListItem>
+                                            <asp:ListItem> < a > </asp:ListItem>
+                                            <asp:ListItem> < p > </asp:ListItem>
+                                            <asp:ListItem> < link > </asp:ListItem>
+                                        </asp:DropDownList>                                        
+                                    </asp:TableCell>
+                                </asp:TableRow>
+                            </asp:Table>
+                        </div>
                         <asp:Button Style="margin-left: 170px" runat="server" CssClass="btn btn-success" ID="btnEvaluacion" OnClick="btnEvaluacion_Click" Text="Evaluar" />
                     </form>
                 </div>

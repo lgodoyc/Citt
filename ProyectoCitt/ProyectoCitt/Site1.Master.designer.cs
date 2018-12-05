@@ -7,7 +7,7 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace ProyectoCitt.Views.Alumno {
+namespace ProyectoCitt {
     
     
     public partial class Site1 {

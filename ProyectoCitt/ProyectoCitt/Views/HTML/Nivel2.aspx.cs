@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoCitt.Controllers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,7 +17,37 @@ namespace ProyectoCitt.Views.HTML
 
         protected void btnEvaluacion_Click(object sender, EventArgs e)
         {
+            int sum = 0;
+            if (preguntaUno.SelectedIndex == 2)
+            {
+                sum++;
+            }
+            if (preguntaDos.SelectedIndex == 3)
+            {
+                sum++;
+            }
+            if (preguntaTres.SelectedIndex == 1)
+            {
+                sum++;
+            }
+            double nota = (sum * 7) / 3;
+            nota = Math.Round(nota, 1);
+        }
+        private bool insertarNota(double nota)
+        {
+            string usuario = Session["usuario"].ToString();
+            string rut = string.Empty;
+            Notas notas = new Notas();
 
+            notas.rut = rut;
+            notas.idCurso = 1;
+            notas.nota = nota;
+
+            if (notas.create())
+            {
+                return true;
+            }
+            else { return false; }
         }
     }
 }

@@ -31,7 +31,7 @@ namespace ProyectoCitt
                         break;
                     case 2:
                         Session["alumno"] = "alumno";
-                        Session["usuario"] = user;
+                        Session["usuario"] = usuario.idUsuario;
                         Response.Redirect("Views/Alumno/InicioAlumno.aspx");
                         break;
                     default:

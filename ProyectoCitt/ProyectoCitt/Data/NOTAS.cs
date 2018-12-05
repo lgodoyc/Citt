@@ -16,9 +16,7 @@ namespace ProyectoCitt.Data
     {
         public string RUT { get; set; }
         public decimal IDCURSO { get; set; }
-        public Nullable<decimal> NOTA1 { get; set; }
-        public Nullable<decimal> NOTA2 { get; set; }
-        public Nullable<decimal> NOTA3 { get; set; }
+        public Nullable<decimal> NOTA { get; set; }
     
         public virtual CURSO CURSO { get; set; }
         public virtual PERSONA PERSONA { get; set; }

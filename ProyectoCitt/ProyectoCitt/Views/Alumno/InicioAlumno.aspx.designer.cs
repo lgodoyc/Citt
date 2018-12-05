@@ -10,6 +10,6 @@
 namespace ProyectoCitt.Views.Alumno {
     
     
-    public partial class InicioAlumno {
+    public partial class inicioAlumno {
     }
 }

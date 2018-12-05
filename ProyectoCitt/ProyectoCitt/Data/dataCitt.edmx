@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Model.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="11.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="Model.Store" Provider="Oracle.ManagedDataAccess.Client" ProviderManifestToken="11.2" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="COMUNA">
           <Key>
             <PropertyRef Name="IDCOMUNA" />
@@ -36,9 +36,7 @@
           </Key>
           <Property Name="RUT" Type="varchar2" MaxLength="10" Nullable="false" />
           <Property Name="IDCURSO" Type="number" Precision="38" Scale="0" Nullable="false" />
-          <Property Name="NOTA1" Type="number" Precision="38" Scale="0" />
-          <Property Name="NOTA2" Type="number" Precision="38" Scale="0" />
-          <Property Name="NOTA3" Type="number" Precision="38" Scale="0" />
+          <Property Name="NOTA" Type="number" Precision="38" Scale="0" />
         </EntityType>
         <EntityType Name="PERSONA">
           <Key>
@@ -304,8 +302,7 @@
             <End Role="USUARIO" EntitySet="USUARIO" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -348,11 +345,9 @@
           </Key>
           <Property Name="RUT" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="IDCURSO" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
-          <Property Name="NOTA1" Type="Decimal" Precision="38" Scale="0" />
-          <Property Name="NOTA2" Type="Decimal" Precision="38" Scale="0" />
-          <Property Name="NOTA3" Type="Decimal" Precision="38" Scale="0" />
           <NavigationProperty Name="CURSO" Relationship="Self.FK_NOTAS_CURSO" FromRole="NOTAS" ToRole="CURSO" />
           <NavigationProperty Name="PERSONA" Relationship="Self.FK_NOTAS_PERSONA" FromRole="NOTAS" ToRole="PERSONA" />
+          <Property Name="NOTA" Type="Decimal" Precision="38" Scale="0" />
         </EntityType>
         <EntityType Name="PERSONA">
           <Key>
@@ -633,12 +628,10 @@
           <EntitySetMapping Name="NOTAS">
             <EntityTypeMapping TypeName="Model.NOTAS">
               <MappingFragment StoreEntitySet="NOTAS">
+                <ScalarProperty Name="NOTA" ColumnName="NOTA" />
                 <ScalarProperty Name="RUT" ColumnName="RUT" />
                 <ScalarProperty Name="IDCURSO" ColumnName="IDCURSO" />
-                <ScalarProperty Name="NOTA1" ColumnName="NOTA1" />
-                <ScalarProperty Name="NOTA2" ColumnName="NOTA2" />
-                <ScalarProperty Name="NOTA3" ColumnName="NOTA3" />
-              </MappingFragment>
+                </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PERSONA">

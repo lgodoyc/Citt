@@ -40,7 +40,7 @@ namespace ProyectoCitt.Views.HTML
             Notas notas = new Notas();
 
             notas.rut = rut;
-            notas.idCurso = 1;
+            notas.idCurso = 2;
             notas.nota = nota;
 
             if (notas.create())

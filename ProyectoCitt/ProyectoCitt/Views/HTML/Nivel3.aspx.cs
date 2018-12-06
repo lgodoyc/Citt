@@ -41,7 +41,7 @@ namespace ProyectoCitt.Views.HTML
             Notas notas = new Notas();
 
             notas.rut = rut;
-            notas.idCurso = 1;
+            notas.idCurso = 3;
             notas.nota = nota;
 
             if (notas.create())
@@ -52,5 +52,4 @@ namespace ProyectoCitt.Views.HTML
         }
 
     }
-}
 }

@@ -22,6 +22,33 @@ namespace ProyectoCitt.Views.JQuery {
         protected global::System.Web.UI.WebControls.Table tablaConsultaPermisos;
         
         /// <summary>
+        /// Control preguntaUno.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList preguntaUno;
+        
+        /// <summary>
+        /// Control preguntaDos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList preguntaDos;
+        
+        /// <summary>
+        /// Control preguntaTres.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList preguntaTres;
+        
+        /// <summary>
         /// Control btnEvaluacion.
         /// </summary>
         /// <remarks>

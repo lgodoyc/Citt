@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Nivel2.aspx.cs" Inherits="ProyectoCitt.Views.CSS.Nivel2" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script>
         function openModal() {
@@ -75,44 +76,44 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label=""><span>×</span></button>
                 </div>
                 <div class="modal-body">
-                    <div class="table-responsive printable">
-                        <asp:Table runat="server" CssClass="table table-bordred table-striped" ID="tablaConsultaPermisos">
-                            <asp:TableRow TableSection="TableHeader">
-                                <asp:TableHeaderCell>N°1: ¿Que es un HTML?</asp:TableHeaderCell>
-                                <asp:TableCell>
-                                    <select>
-                                        <option>Seleccione Opcion</option>
-                                        <option>Es un lenguaje de JAVA</option>
-                                        <option>Un lenguaje de programacion</option>
-                                        <option>Lenguaje de Hipertexto</option>
-                                    </select>
-                                </asp:TableCell>
-                            </asp:TableRow>
-                            <asp:TableRow TableSection="TableHeader">
-                                <asp:TableHeaderCell>N°2: ¿Que tag se utiliza para poner un comentario?</asp:TableHeaderCell>
-                                <asp:TableCell>
-                                    <select>
-                                        <option>Seleccione Opcion</option>
-                                        <option>< head ></option>
-                                        <option>< ! --  -- ></option>
-                                        <option>Se escrube sin anteponer el "<"</option>
-                                    </select>
-                                </asp:TableCell>
-                            </asp:TableRow>
-                            <asp:TableRow TableSection="TableHeader">
-                                <asp:TableHeaderCell>N°3: ¿Que funcion cumple un atributo dentro de una etiqueta?</asp:TableHeaderCell>
-                                <asp:TableCell>
-                                    <select>
-                                        <option>Seleccione Opcion</option>
-                                        <option>Es una descripcion</option>
-                                        <option>Es una accion de una etiqueta</option>
-                                        <option>Define acciones o estilo</option>
-                                    </select>
-                                </asp:TableCell>
-                            </asp:TableRow>
-                        </asp:Table>
-                    </div>
                     <form runat="server">
+                        <div class="table-responsive printable">
+                            <asp:Table runat="server" CssClass="table table-bordred table-striped" ID="tablaConsultaPermisos">
+                                <asp:TableRow TableSection="TableHeader">
+                                    <asp:TableHeaderCell>N°1: ¿Que es un HTML?</asp:TableHeaderCell>
+                                    <asp:TableCell>
+                                        <asp:DropDownList runat="server" ID="preguntaUno">
+                                            <asp:ListItem>Seleccione Opcion</asp:ListItem>
+                                            <asp:ListItem></asp:ListItem>
+                                            <asp:ListItem></asp:ListItem>
+                                            <asp:ListItem></asp:ListItem>
+                                        </asp:DropDownList>
+                                    </asp:TableCell>
+                                </asp:TableRow>
+                                <asp:TableRow TableSection="TableHeader">
+                                    <asp:TableHeaderCell>N°2: ¿Que tag se utiliza para poner un comentario?</asp:TableHeaderCell>
+                                    <asp:TableCell>
+                                        <asp:DropDownList runat="server" ID="preguntaDos">
+                                            <asp:ListItem>Seleccione Opcion</asp:ListItem>
+                                            <asp:ListItem></asp:ListItem>
+                                            <asp:ListItem></asp:ListItem>
+                                            <asp:ListItem></asp:ListItem>
+                                        </asp:DropDownList>
+                                    </asp:TableCell>
+                                </asp:TableRow>
+                                <asp:TableRow TableSection="TableHeader">
+                                    <asp:TableHeaderCell>N°3: ¿Que funcion cumple un atributo dentro de una etiqueta?</asp:TableHeaderCell>
+                                    <asp:TableCell>
+                                        <asp:DropDownList runat="server" ID="preguntaTres">
+                                            <asp:ListItem>Seleccione Opcion</asp:ListItem>
+                                            <asp:ListItem></asp:ListItem>
+                                            <asp:ListItem></asp:ListItem>
+                                            <asp:ListItem></asp:ListItem>
+                                        </asp:DropDownList>
+                                    </asp:TableCell>
+                                </asp:TableRow>
+                            </asp:Table>
+                        </div>
                         <asp:Button Style="margin-left: 170px" runat="server" CssClass="btn btn-success" ID="btnEvaluacion" OnClick="btnEvaluacion_Click" Text="Evaluar" />
                     </form>
                 </div>

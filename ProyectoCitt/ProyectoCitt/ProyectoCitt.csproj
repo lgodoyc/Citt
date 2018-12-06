@@ -159,27 +159,10 @@
     <Content Include="Content\Site.css" />
     <Content Include="Content\style.css" />
     <Content Include="Content\util.css" />
-    <Content Include="Data\dataCitt.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>dataCitt.Context.cs</LastGenOutput>
-      <DependentUpon>dataCitt.edmx</DependentUpon>
-    </Content>
-    <Content Include="Data\dataCitt.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>dataCitt.edmx</DependentUpon>
-      <LastGenOutput>dataCitt.cs</LastGenOutput>
-    </Content>
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <EntityDeploy Include="Data\dataCitt.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>dataCitt.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Data\dataCitt.edmx.diagram">
-      <DependentUpon>dataCitt.edmx</DependentUpon>
-    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\esm\popper-utils.js" />
@@ -300,52 +283,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\Conexion.cs" />
     <Compile Include="Controllers\Notas.cs" />
+    <Compile Include="Controllers\Persona.cs" />
     <Compile Include="Controllers\Usuario.cs" />
-    <Compile Include="Data\COMUNA.cs">
-      <DependentUpon>dataCitt.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\CURSO.cs">
-      <DependentUpon>dataCitt.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\dataCitt.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dataCitt.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\dataCitt.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dataCitt.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\dataCitt.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dataCitt.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Data\ESTADO.cs">
-      <DependentUpon>dataCitt.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\NOTAS.cs">
-      <DependentUpon>dataCitt.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\PERSONA.cs">
-      <DependentUpon>dataCitt.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\PROVINCIA.cs">
-      <DependentUpon>dataCitt.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\REGION.cs">
-      <DependentUpon>dataCitt.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\TIPO_CURSO.cs">
-      <DependentUpon>dataCitt.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\TIPO_USUARIO.cs">
-      <DependentUpon>dataCitt.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\USUARIO.cs">
-      <DependentUpon>dataCitt.tt</DependentUpon>
-    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -506,6 +445,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

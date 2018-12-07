@@ -29,6 +29,9 @@ namespace ProyectoCitt.Controllers
                 nota.NOTA = Convert.ToDecimal(this.nota);
 
                 Conexion.entities.NOTAS.Add(nota);
+
+                Conexion.entities.SaveChanges();
+
                 return true;
             }
             catch (Exception e)

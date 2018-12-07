@@ -19,6 +19,7 @@ namespace ProyectoCitt.Data
         public Nullable<decimal> NOTA { get; set; }
     
         public virtual CURSO CURSO { get; set; }
-        public virtual PERSONA PERSONA { get; set; }
+       public virtual PERSONA PERSONA { get; set; }
+        
     }
 }

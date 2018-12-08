@@ -232,8 +232,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\Conexion.cs" />
+    <Compile Include="Controllers\Curso.cs" />
     <Compile Include="Controllers\Notas.cs" />
     <Compile Include="Controllers\Persona.cs" />
+    <Compile Include="Controllers\TipoCurso.cs" />
     <Compile Include="Controllers\Usuario.cs" />
     <Compile Include="Data\COMUNA.cs">
       <DependentUpon>Model1.tt</DependentUpon>

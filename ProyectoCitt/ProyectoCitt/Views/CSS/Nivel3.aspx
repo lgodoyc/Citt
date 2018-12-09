@@ -7,28 +7,23 @@
         }
 
         function openInfo1() {
-            $('[id*=Title]').text("¿Que es un enlace?");
-            $('[id*=lblInfo]').text("En el HTML los enlaces se marcan con la etiqueta <a></a> y el atributo principal es href= donde se escribe la ubicación del archivo de destino que puede estar en la misma carpeta que el archivo que lo está llamando, en otra carpeta del mismo sitio o en otro sitio web.");
+            $('[id*=Title]').text("¿Que es una unidad de medida en CSS?");
+            $('[id*=lblInfo]').text("Las medidas en CSS se emplean, entre otras, para definir la altura, anchura y márgenes de los elementos y para establecer el tamaño de letra del texto. Todas las medidas se indican como un valor numérico entero o decimal seguido de una unidad de medida (sin ningún espacio en blanco entre el número y la unidad de medida).");
             $('#modalInfo').modal('show');
         }
 
         function openInfo2() {
-            $('[id*=Title]').text("Atributo target");
-            $('[id*=lblInfo]').text("Cuando abrimos una página web en un navegador (haciendo clic en un enlace) puede especificar dónde y cómo abrir esta ventana. Si no se especifica al navegador una cierta ventana, entonces la página se abrirá en la misma ventana. Podemos decir al navegador que utilice cierta ventana con la ayuda del atributo target de la etiqueta <a>. El valor del atributo target le dice al navegador en donde tiene que abrir esta pagina web. Por ejemplo el valor _blank dice al navegado que tiene que abrir la pagina en una nueva ventana.");
+            $('[id*=Title]').text("Unidad de medida relativa en CSS");
+            $('[id*=lblInfo]').text("La unidad relativa, son medidas flexibles que se ajustan mas a nuestro trabajo (%)");
             $('#modalInfo').modal('show');
         }
 
         function openInfo3() {
-            $('[id*=Title]').text("¿Etiqueta <link>");
-            $('[id*=lblInfo]').text("El elemento HTML <link> especifica la relación entre el documento actual y un recurso externo. Los usos posibles de este elemento incluyen la definición de un marco relacional para navegación. Este elemento es más frecuentemente usado para enlazar hojas de estilos.");
+            $('[id*=Title]').text("Unidad de medida absoluta en CSS");
+            $('[id*=lblInfo]').text("La unidad absoluta, nos permite establecer un valor fijo y que no se modifique para nada (px, em, rem,cm,in,mm)");
             $('#modalInfo').modal('show');
         }
 
-        function openInfo4() {
-            $('[id*=Title]').text("Abrir Correo");
-            $('[id*=lblInfo]').text("Naturalmente, éste debe ser un URL válido. ... Es decir, un enlace HTML cuyo atributo HREF sea un URL del esquema mailto no puede contener más información que la dirección de correo electrónico vinculada: ni asunto, ni cuerpo, ni nada. Sólo la dirección de correo");
-            $('#modalInfo').modal('show');
-        }
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -36,7 +31,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-7">
-                <video autoplay class="embed-responsive-item" width="900px" height="500px">
+                <video autoplay class="embed-responsive-item" width="900px" height="500px" controls>
                     <source src="../../Scripts/Multimedia/CSS_3.mp4" type="video/mp4">
                 </video>
             </div>
@@ -47,10 +42,9 @@
                 </div>
                 <div class="col-sm-5">
                     <div class="list-group" id="list-tab" role="tablist">
-                        <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home" onclick="javascript:openInfo1()">Introduccion al html</a>
-                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile" onclick="javascript:openInfo2()">¿Que es una etiqueta?</a>
-                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages" onclick="javascript:openInfo3()">¿Que es un atributo?</a>
-                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings" onclick="javascript:openInfo4()">Estructura de un html</a>
+                        <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home" onclick="javascript:openInfo1()">¿Que es una unidad de medida en CSS?</a>
+                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile" onclick="javascript:openInfo2()">Unidad de medida relativa en CSS</a>
+                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages" onclick="javascript:openInfo3()">Unidad de medida absoluta en CSS</a>
                     </div>
                 </div>
             </div>
@@ -79,36 +73,36 @@
                     <form runat="server">
                         <div class="table-responsive printable">
                             <asp:Table runat="server" CssClass="table table-bordred table-striped" ID="tablaConsultaPermisos">
-                                <asp:TableRow TableSection="TableHeader">
-                                    <asp:TableHeaderCell>N°1: ¿Que es un HTML?</asp:TableHeaderCell>
+                                <asp:TableRow>
+                                    <asp:TableHeaderCell>N°1: ¿Como puedo hacer que un elemento < p > que esta dentro de un < div > tome el tamaño del body?</asp:TableHeaderCell>
                                     <asp:TableCell>
                                         <asp:DropDownList runat="server" ID="preguntaUno">
                                             <asp:ListItem>Seleccione Opcion</asp:ListItem>
-                                            <asp:ListItem></asp:ListItem>
-                                            <asp:ListItem></asp:ListItem>
-                                            <asp:ListItem></asp:ListItem>
+                                            <asp:ListItem>con la unidad de medida rem</asp:ListItem>
+                                            <asp:ListItem>con la unidad de medida em</asp:ListItem>
+                                            <asp:ListItem>con la unidad de medida px</asp:ListItem>
                                         </asp:DropDownList>
                                     </asp:TableCell>
                                 </asp:TableRow>
-                                <asp:TableRow TableSection="TableHeader">
-                                    <asp:TableHeaderCell>N°2: ¿Que tag se utiliza para poner un comentario?</asp:TableHeaderCell>
+                                <asp:TableRow>
+                                    <asp:TableHeaderCell>N°2: ¿Para que me sirve la unidad de medida em?</asp:TableHeaderCell>
                                     <asp:TableCell>
                                         <asp:DropDownList runat="server" ID="preguntaDos">
                                             <asp:ListItem>Seleccione Opcion</asp:ListItem>
-                                            <asp:ListItem></asp:ListItem>
-                                            <asp:ListItem></asp:ListItem>
-                                            <asp:ListItem></asp:ListItem>
+                                            <asp:ListItem>toma la medida padre</asp:ListItem>
+                                            <asp:ListItem>toma la medida del body</asp:ListItem>
+                                            <asp:ListItem>adopta el 100 % de la pantalla</asp:ListItem>
                                         </asp:DropDownList>
                                     </asp:TableCell>
                                 </asp:TableRow>
-                                <asp:TableRow TableSection="TableHeader">
-                                    <asp:TableHeaderCell>N°3: ¿Que funcion cumple un atributo dentro de una etiqueta?</asp:TableHeaderCell>
+                                <asp:TableRow>
+                                    <asp:TableHeaderCell>N°3: ¿En cual de estas opciones todas sus medidas son absoluta?</asp:TableHeaderCell>
                                     <asp:TableCell>
                                         <asp:DropDownList runat="server" ID="preguntaTres">
                                             <asp:ListItem>Seleccione Opcion</asp:ListItem>
-                                            <asp:ListItem></asp:ListItem>
-                                            <asp:ListItem></asp:ListItem>
-                                            <asp:ListItem></asp:ListItem>
+                                            <asp:ListItem>em, rem, %, cm, mm</asp:ListItem>
+                                            <asp:ListItem>rem, %, px, cm</asp:ListItem>
+                                            <asp:ListItem>Ninguna de las dos anteriores</asp:ListItem>
                                         </asp:DropDownList>
                                     </asp:TableCell>
                                 </asp:TableRow>

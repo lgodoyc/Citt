@@ -18,7 +18,7 @@ namespace ProyectoCitt.Views.CSS
         protected void btnEvaluacion_Click(object sender, EventArgs e)
         {
             int sum = 0;
-            if (preguntaUno.SelectedIndex == 3)
+            if (preguntaUno.SelectedIndex == 2)
             {
                 sum++;
             }
@@ -31,7 +31,11 @@ namespace ProyectoCitt.Views.CSS
                 sum++;
             }
             double nota = (sum * 7) / 3;
-            nota = Math.Round(nota, 1);
+            nota = Math.Round(nota, 2);
+            if (insertarNota(nota))
+            {
+                sum = 0;
+            }
         }
 
         private bool insertarNota(double nota)

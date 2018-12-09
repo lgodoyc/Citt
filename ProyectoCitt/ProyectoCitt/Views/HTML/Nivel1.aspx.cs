@@ -31,7 +31,7 @@ namespace ProyectoCitt.Views.HTML
                 sum++;
             }
             double nota = (sum * 7) / 3;
-            nota = Math.Round(nota,1);
+            nota = Math.Round(nota, 1);
             if (insertarNota(nota))
             {
                 sum = 0;

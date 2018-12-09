@@ -7,26 +7,26 @@
         }
 
         function openInfo1() {
-            $('[id*=Title]').text("Introduccion al html");
-            $('[id*=lblInfo]').text("HTML (HyperText Markup Language) es el primer lenguaje que una persona debe conocer si desea comenzar a realizar páginas web. HTML no es un lenguaje de programación, sino una lenguaje descriptivo, una serie de etiquetas que el navegador interpretará de una u otra forma para mostrar distintos contenidos por pantalla.");
+            $('[id*=Title]').text("¿Que es un selector?");
+            $('[id*=lblInfo]').text("El selector CSS (Cascading Style Sheet) es el nexo de unión entre la hoja de estilos y los documentos a los que se aplique dicha hoja.");
             $('#modalInfo').modal('show');
         }
 
         function openInfo2() {
-            $('[id*=Title]').text("¿Que es una etiqueta en HTML?");
-            $('[id*=lblInfo]').text("Es un fragmento que representa algo dentro de una pagina. Ej. un boton");
+            $('[id*=Title]').text("¿Que es un selector de etiqueta?");
+            $('[id*=lblInfo]').text("Permite aplicar css a una determinada etiqueta (Ej. h2) un tipo de estilo. Esto aplica a todos los selectores h2 que se encuentren en la pagina");
             $('#modalInfo').modal('show');
         }
 
         function openInfo3() {
-            $('[id*=Title]').text("¿Que es un atributo en HTML");
-            $('[id*=lblInfo]').text("Los atributos de las etiquetas HTML sirven para definir detalles de comportamiento o presentación de la etiqueta a los que se les coloca. Se escriben dentro de la propia etiqueta con su nombre de atributo y el valor del atributo entre comillas.");
+            $('[id*=Title]').text("¿Que es un selector decendente?");
+            $('[id*=lblInfo]').text("Permite aplicar css a un elemento que este dentro de otro elemento");
             $('#modalInfo').modal('show');
         }
 
         function openInfo4() {
-            $('[id*=Title]').text("Estructura basica de un HTML");
-            $('[id*=lblInfo]').text("<html><head></head><body></body></html>");
+            $('[id*=Title]').text("¿Que es un selector de clase?");
+            $('[id*=lblInfo]').text("Permite aplicar css a un elemento que tenga una clasa determinada en su estructura. (Ej. en HTML <a class='btn'>boton</a> y en CSS .btn { color:red; })");
             $('#modalInfo').modal('show');
         }
     </script>
@@ -36,7 +36,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-7">
-                <video autoplay class="embed-responsive-item" width="900px" height="500px">
+                <video autoplay class="embed-responsive-item" width="900px" height="500px" controls>
                     <source src="../../Scripts/Multimedia/CSS_2.mp4" type="video/mp4">
                 </video>
             </div>
@@ -47,10 +47,10 @@
                 </div>
                 <div class="col-sm-5">
                     <div class="list-group" id="list-tab" role="tablist">
-                        <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home" onclick="javascript:openInfo1()">Introduccion al html</a>
-                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile" onclick="javascript:openInfo2()">¿Que es una etiqueta?</a>
-                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages" onclick="javascript:openInfo3()">¿Que es un atributo?</a>
-                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings" onclick="javascript:openInfo4()">Estructura de un html</a>
+                        <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home" onclick="javascript:openInfo1()">¿Que es un selector?</a>
+                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile" onclick="javascript:openInfo2()">¿Que es un selector de etiqueta?</a>
+                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages" onclick="javascript:openInfo3()">¿Que es un selector decendente?</a>
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings" onclick="javascript:openInfo4()">¿Que es un selector de clase?</a>
                     </div>
                 </div>
             </div>
@@ -79,36 +79,36 @@
                     <form runat="server">
                         <div class="table-responsive printable">
                             <asp:Table runat="server" CssClass="table table-bordred table-striped" ID="tablaConsultaPermisos">
-                                <asp:TableRow TableSection="TableHeader">
-                                    <asp:TableHeaderCell>N°1: ¿Que es un HTML?</asp:TableHeaderCell>
+                                <asp:TableRow>
+                                    <asp:TableHeaderCell>N°1: ¿Como aplico CSS a una clase?</asp:TableHeaderCell>
                                     <asp:TableCell>
                                         <asp:DropDownList runat="server" ID="preguntaUno">
                                             <asp:ListItem>Seleccione Opcion</asp:ListItem>
-                                            <asp:ListItem></asp:ListItem>
-                                            <asp:ListItem></asp:ListItem>
-                                            <asp:ListItem></asp:ListItem>
+                                            <asp:ListItem>comenzando con #</asp:ListItem>
+                                            <asp:ListItem>comenzando con .</asp:ListItem>
+                                            <asp:ListItem>Comenzando con el atributo</asp:ListItem>
                                         </asp:DropDownList>
                                     </asp:TableCell>
                                 </asp:TableRow>
-                                <asp:TableRow TableSection="TableHeader">
-                                    <asp:TableHeaderCell>N°2: ¿Que tag se utiliza para poner un comentario?</asp:TableHeaderCell>
+                                <asp:TableRow>
+                                    <asp:TableHeaderCell>N°2: ¿Como aplico CSS a un element con ID?</asp:TableHeaderCell>
                                     <asp:TableCell>
                                         <asp:DropDownList runat="server" ID="preguntaDos">
                                             <asp:ListItem>Seleccione Opcion</asp:ListItem>
-                                            <asp:ListItem></asp:ListItem>
-                                            <asp:ListItem></asp:ListItem>
-                                            <asp:ListItem></asp:ListItem>
+                                            <asp:ListItem>.</asp:ListItem>
+                                            <asp:ListItem>#</asp:ListItem>
+                                            <asp:ListItem>Comenzando con el elemento</asp:ListItem>
                                         </asp:DropDownList>
                                     </asp:TableCell>
                                 </asp:TableRow>
-                                <asp:TableRow TableSection="TableHeader">
-                                    <asp:TableHeaderCell>N°3: ¿Que funcion cumple un atributo dentro de una etiqueta?</asp:TableHeaderCell>
+                                <asp:TableRow>
+                                    <asp:TableHeaderCell>N°3: ¿Como aplicar CSS a un elemento < a > que esta dentro de un elemento < p >?</asp:TableHeaderCell>
                                     <asp:TableCell>
                                         <asp:DropDownList runat="server" ID="preguntaTres">
                                             <asp:ListItem>Seleccione Opcion</asp:ListItem>
-                                            <asp:ListItem></asp:ListItem>
-                                            <asp:ListItem></asp:ListItem>
-                                            <asp:ListItem></asp:ListItem>
+                                            <asp:ListItem>. y atributo</asp:ListItem>
+                                            <asp:ListItem># y elemento</asp:ListItem>
+                                            <asp:ListItem>elemento espacio elemento</asp:ListItem>
                                         </asp:DropDownList>
                                     </asp:TableCell>
                                 </asp:TableRow>

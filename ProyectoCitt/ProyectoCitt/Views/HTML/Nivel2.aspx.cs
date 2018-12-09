@@ -31,12 +31,17 @@ namespace ProyectoCitt.Views.HTML
                 sum++;
             }
             double nota = (sum * 7) / 3;
-            nota = Math.Round(nota, 1);
+            nota = Math.Round(nota, 2);
+            if (insertarNota(nota))
+            {
+                sum = 0;
+            }
         }
         private bool insertarNota(double nota)
         {
-            string usuario = Session["usuario"].ToString();
-            string rut = string.Empty;
+            Persona persona = new Persona();
+            int idUsuario = Convert.ToInt32(Session["usuario"].ToString());
+            string rut = persona.retornarRutByIdCuenta(idUsuario);
             Notas notas = new Notas();
 
             notas.rut = rut;

@@ -18,11 +18,11 @@ namespace ProyectoCitt.Views.CSS
         protected void btnEvaluacion_Click(object sender, EventArgs e)
         {
             int sum = 0;
-            if (preguntaUno.SelectedIndex == 3)
+            if (preguntaUno.SelectedIndex == 2)
             {
                 sum++;
             }
-            if (preguntaDos.SelectedIndex == 2)
+            if (preguntaDos.SelectedIndex == 3)
             {
                 sum++;
             }

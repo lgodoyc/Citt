@@ -7,26 +7,26 @@
         }
 
         function openInfo1() {
-            $('[id*=Title]').text("Introduccion al html");
-            $('[id*=lblInfo]').text("HTML (HyperText Markup Language) es el primer lenguaje que una persona debe conocer si desea comenzar a realizar páginas web. HTML no es un lenguaje de programación, sino una lenguaje descriptivo, una serie de etiquetas que el navegador interpretará de una u otra forma para mostrar distintos contenidos por pantalla.");
+            $('[id*=Title]').text("Introduccion al CSS");
+            $('[id*=lblInfo]').text("El CSS (hojas de estilo en cascada) es un lenguaje que define la apariencia de un documento escrito en un lenguaje de marcado (por ejemplo, HTML). Así, a los elementos de la página web creados con HTML se les dará la apariencia que se desee utilizando CSS: colores, espacios entre elementos, tipos de letra, ... separando de esta forma la estructura de la presentación.");
             $('#modalInfo').modal('show');
         }
 
         function openInfo2() {
-            $('[id*=Title]').text("¿Que es una etiqueta en HTML?");
-            $('[id*=lblInfo]').text("Es un fragmento que representa algo dentro de una pagina. Ej. un boton");
+            $('[id*=Title]').text("¿Que es la etiqueta style?");
+            $('[id*=lblInfo]').text("La etiqueta style, nos permite otorgarle reglas de estilo a un elemnto determinado directamente en la etiqueda del html");
             $('#modalInfo').modal('show');
         }
 
         function openInfo3() {
-            $('[id*=Title]').text("¿Que es un atributo en HTML");
-            $('[id*=lblInfo]').text("Los atributos de las etiquetas HTML sirven para definir detalles de comportamiento o presentación de la etiqueta a los que se les coloca. Se escriben dentro de la propia etiqueta con su nombre de atributo y el valor del atributo entre comillas.");
+            $('[id*=Title]').text("¿Que es una regla CSS?");
+            $('[id*=lblInfo]').text("Una regla, es todo el conjunto de grupos para poder darle estilos a un elemento. Se compone de un selector, propiedad y el valor de la propiedad");
             $('#modalInfo').modal('show');
         }
 
         function openInfo4() {
-            $('[id*=Title]').text("Estructura basica de un HTML");
-            $('[id*=lblInfo]').text("<html><head></head><body></body></html>");
+            $('[id*=Title]').text("¿Como crear una hoja de estulo directamente en el html?");
+            $('[id*=lblInfo]').text("<style type='text/css' ></style>");
             $('#modalInfo').modal('show');
         }
     </script>
@@ -36,7 +36,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-7">
-                <video autoplay class="embed-responsive-item" width="900px" height="500px">
+                <video  class="embed-responsive-item" width="900px" height="500px" controls>
                     <source src="../../Scripts/Multimedia/CSS_1.mp4" type="video/mp4">
                 </video>
             </div>
@@ -47,10 +47,9 @@
                 </div>
                 <div class="col-sm-5">
                     <div class="list-group" id="list-tab" role="tablist">
-                        <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home" onclick="javascript:openInfo1()">Introduccion al html</a>
-                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile" onclick="javascript:openInfo2()">¿Que es una etiqueta?</a>
-                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages" onclick="javascript:openInfo3()">¿Que es un atributo?</a>
-                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings" onclick="javascript:openInfo4()">Estructura de un html</a>
+                        <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home" onclick="javascript:openInfo1()">Introduccion al CSS</a>
+                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile" onclick="javascript:openInfo2()">¿Que es la etiqueta style?</a>
+                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages" onclick="javascript:openInfo3()">¿Que es una regla CSS?</a>
                     </div>
                 </div>
             </div>
@@ -79,36 +78,36 @@
                     <form runat="server">
                         <div class="table-responsive printable">
                             <asp:Table runat="server" CssClass="table table-bordred table-striped" ID="tablaConsultaPermisos">
-                                <asp:TableRow TableSection="TableHeader">
-                                    <asp:TableHeaderCell>N°1: ¿Que es un HTML?</asp:TableHeaderCell>
+                                <asp:TableRow>
+                                    <asp:TableHeaderCell>N°1: ¿Que realiza la propiedad color?</asp:TableHeaderCell>
                                     <asp:TableCell>
                                         <asp:DropDownList runat="server" ID="preguntaUno">
                                             <asp:ListItem>Seleccione Opcion</asp:ListItem>
-                                            <asp:ListItem></asp:ListItem>
-                                            <asp:ListItem></asp:ListItem>
-                                            <asp:ListItem></asp:ListItem>
+                                            <asp:ListItem>cambia el color del fondo</asp:ListItem>
+                                            <asp:ListItem>Cambia el color de la fuente</asp:ListItem>
+                                            <asp:ListItem>Cambia el tipo de letra</asp:ListItem>
                                         </asp:DropDownList>
                                     </asp:TableCell>
                                 </asp:TableRow>
-                                <asp:TableRow TableSection="TableHeader">
-                                    <asp:TableHeaderCell>N°2: ¿Que tag se utiliza para poner un comentario?</asp:TableHeaderCell>
+                                <asp:TableRow>
+                                    <asp:TableHeaderCell>N°2: ¿Que realiza la propiedad blackground?</asp:TableHeaderCell>
                                     <asp:TableCell>
                                         <asp:DropDownList runat="server" ID="preguntaDos">
                                             <asp:ListItem>Seleccione Opcion</asp:ListItem>
-                                            <asp:ListItem></asp:ListItem>
-                                            <asp:ListItem></asp:ListItem>
-                                            <asp:ListItem></asp:ListItem>
+                                            <asp:ListItem>Cambia el color de la fuente</asp:ListItem>
+                                            <asp:ListItem>Cambia el color del titulo</asp:ListItem>
+                                            <asp:ListItem>Cambia el color del fondo</asp:ListItem>
                                         </asp:DropDownList>
                                     </asp:TableCell>
                                 </asp:TableRow>
-                                <asp:TableRow TableSection="TableHeader">
-                                    <asp:TableHeaderCell>N°3: ¿Que funcion cumple un atributo dentro de una etiqueta?</asp:TableHeaderCell>
+                                <asp:TableRow>
+                                    <asp:TableHeaderCell>N°3: ¿Si puede crear una hoja de estilo en el HTML?</asp:TableHeaderCell>
                                     <asp:TableCell>
                                         <asp:DropDownList runat="server" ID="preguntaTres">
                                             <asp:ListItem>Seleccione Opcion</asp:ListItem>
-                                            <asp:ListItem></asp:ListItem>
-                                            <asp:ListItem></asp:ListItem>
-                                            <asp:ListItem></asp:ListItem>
+                                            <asp:ListItem>Si</asp:ListItem>
+                                            <asp:ListItem>No</asp:ListItem>
+                                            <asp:ListItem>Si, pero no se le recomienda</asp:ListItem>
                                         </asp:DropDownList>
                                     </asp:TableCell>
                                 </asp:TableRow>

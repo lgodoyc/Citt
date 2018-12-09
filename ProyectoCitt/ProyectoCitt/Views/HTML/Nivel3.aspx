@@ -36,7 +36,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-7">
-                <video autoplay class="embed-responsive-item" width="900px" height="500px">
+                <video  class="embed-responsive-item" width="900px" height="500px" controls>
                     <source src="../../Scripts/Multimedia/HTML_3.mp4" type="video/mp4">
                 </video>
             </div>
@@ -78,7 +78,7 @@
                     <form runat="server">
                         <div class="table-responsive printable">
                             <asp:Table runat="server" CssClass="table table-bordred table-striped" ID="tablaConsultaPermisos">
-                                <asp:TableRow TableSection="TableHeader">
+                                <asp:TableRow>
                                     <asp:TableHeaderCell>N°1: ¿que atributo se utilizar para especificar la ruta del enlace?</asp:TableHeaderCell>
                                     <asp:TableCell>
                                         <asp:DropDownList runat="server" ID="preguntaUno">
@@ -89,7 +89,7 @@
                                         </asp:DropDownList>
                                     </asp:TableCell>
                                 </asp:TableRow>
-                                <asp:TableRow TableSection="TableHeader">
+                                <asp:TableRow>
                                     <asp:TableHeaderCell>N°2: ¿Como se abre el cliente de correo?</asp:TableHeaderCell>
                                     <asp:TableCell>
                                         <asp:DropDownList runat="server" ID="preguntaDos">
@@ -100,7 +100,7 @@
                                         </asp:DropDownList>
                                     </asp:TableCell>
                                 </asp:TableRow>
-                                <asp:TableRow TableSection="TableHeader">
+                                <asp:TableRow>
                                     <asp:TableHeaderCell>N°3: ¿Que etiqueta se utiliza para invocar un css?</asp:TableHeaderCell>
                                     <asp:TableCell>
                                         <asp:DropDownList runat="server" ID="preguntaTres">

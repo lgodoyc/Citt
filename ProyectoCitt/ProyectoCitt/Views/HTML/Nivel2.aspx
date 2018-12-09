@@ -35,7 +35,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-7">
-                <video autoplay class="embed-responsive-item"  width="900px" height="500px">
+                <video  class="embed-responsive-item"  width="900px" height="500px" controls>
                     <source src="../../Scripts/Multimedia/HTML_2.mp4" type="video/mp4">
                 </video>
             </div>
@@ -77,7 +77,7 @@
                     <form runat="server">
                     <div class="table-responsive printable">
                         <asp:Table runat="server" CssClass="table table-bordred table-striped" ID="tablaConsultaPermisos">
-                            <asp:TableRow TableSection="TableHeader">
+                            <asp:TableRow>
                                 <asp:TableHeaderCell>N°1: ¿Para que se utiliza la etiqueta < strong >?</asp:TableHeaderCell>
                                 <asp:TableCell>
                                     <asp:DropDownList runat="server" ID="preguntaUno">
@@ -88,7 +88,7 @@
                                     </asp:DropDownList>                                    
                                 </asp:TableCell>
                             </asp:TableRow>
-                            <asp:TableRow TableSection="TableHeader">
+                            <asp:TableRow>
                                 <asp:TableHeaderCell>N°2: ¿que etiqueta se utiliza para un titulo?</asp:TableHeaderCell>
                                 <asp:TableCell>
                                     <asp:DropDownList runat="server" ID="preguntaDos">
@@ -99,7 +99,7 @@
                                     </asp:DropDownList>                                    
                                 </asp:TableCell>
                             </asp:TableRow>
-                            <asp:TableRow TableSection="TableHeader">
+                            <asp:TableRow>
                                 <asp:TableHeaderCell>N°3: ¿que etiqueta se utiliza para crear un parrafo?</asp:TableHeaderCell>
                                 <asp:TableCell>
                                     <asp:DropDownList runat="server" ID="preguntaTres">

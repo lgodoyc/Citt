@@ -36,7 +36,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-7">
-                <video autoplay class="embed-responsive-item" width="900px" height="500px" controls>
+                <video class="embed-responsive-item" width="900px" height="500px" controls>
                     <source src="../../Scripts/Multimedia/CSS_2.mp4" type="video/mp4">
                 </video>
             </div>

@@ -44,9 +44,9 @@
                         <div class="panel-body">
                             <div class="list-group">
 
-                                <a href="../Administrador/InicioAdmin.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>
+<%--                                <a href="../Administrador/InicioAdmin.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>
                                     <asp:Label runat="server" ID="lblAdmin"></asp:Label>
-                                </a>
+                                </a>--%>
                                 <a href="../Alumno/ListarNotas.aspx" class="list-group-item"><span class="glyphicon glyphicon-link" aria-hidden="true"></span> Notas </a>
                             </div>
                         </div>
